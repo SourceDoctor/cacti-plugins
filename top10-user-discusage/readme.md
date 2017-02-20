@@ -1,7 +1,5 @@
 # Top 10 Discusage of Homedirectories
 
-In directory screenshots you'll find some Screenshots
-
 ## Installation
 
 The Shell-Script has to be on every relevant machine, for Monitoring User Disc Usages.
@@ -19,6 +17,9 @@ snmpd.conf has to be Extended with this lines:
     extend discusage_user8 /bin/bash /etc/snmp/cacti_userspaces.sh user8
     extend discusage_user9 /bin/bash /etc/snmp/cacti_userspaces.sh user9
     extend discusage_user10 /bin/bash /etc/snmp/cacti_userspaces.sh user10
+
+**Screenshot**
+![Screenshot](screenshots/1Unbenannt.png)
 
 ## Todo
 - find a way to get the count of list in cacti dynamically
