@@ -19,6 +19,7 @@ snmpd.conf has to be Extended with this lines:
     extend discusage_user10 /bin/bash /etc/snmp/cacti_userspaces.sh user10
 
 **Screenshot**
+
 ![Screenshot](screenshots/1Unbenannt.png)
 
 ## Todo
