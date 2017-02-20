@@ -1,7 +1,5 @@
 # Weather Condition per location
 
-In directory screenshots you'll find some Screenshots
-
 This Cacti Addon is for getting:
 - Temperature Data
 - Humidity
