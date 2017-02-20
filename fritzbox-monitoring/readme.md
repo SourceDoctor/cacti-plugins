@@ -9,18 +9,22 @@
 * Max usable Datarate
 
 **Traffic**
+
 ![traffic](screenshots/traffic.png)
 
 
 **Attenuation**
+
 ![attenuation](screenshots/attenuation.png)
 
 
 **possible data rates**
+
 ![possible data rates](screenshots/possible%2520data%2520rates.png)
 
 
 **signal power**
+
 ![signal power](screenshots/signal%2520power.png)
 
 
