@@ -63,6 +63,7 @@ You need to have Python Modul 'simplejson' installed
     DONE
 
     Graph Template should look like this:
+    
     ![Graph Template](screenshots/installation/3.jpg)
 
 6. Openweather Map added a free Registration for the Usage of the API.
