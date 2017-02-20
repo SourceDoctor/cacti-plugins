@@ -23,11 +23,15 @@ You need to have Python Modul 'simplejson' installed
 
     You have to create 2 easy CDEF Functions,
     (maybe there will be an export Function for CDEF in future versions of Cacti too):
+    
+    ![CDEF point](screenshots/installation/1.jpg)
 
     go to "Graph Management" -> CDEFs
-    click on "Add"
-
-    give the name "Greater 0" and click on Create
+    click on "Add"
+    
+    ![CDEF Creation](screenshots/installation/2.jpg)
+    
+    give the name "Greater 0" and click on Create
     now click on Add
      now do this:
         Type: Special Data Source
@@ -59,6 +63,10 @@ You need to have Python Modul 'simplejson' installed
      now click on Save
 
     DONE
+
+    Graph Template should look like this:
+    ![Graph Template](screenshots/installation/3.jpg)
+
 6. Openweather Map added a free Registration for the Usage of the API.
 How to get an API Key, you will find Information in the Script
 The API Key has to be added in the Script also
@@ -78,3 +86,18 @@ select the Open Weather Map - Graph Template in Graph Templates,
 click on save,
 now there should be the City and Country listed in the Graph like expected.
 
+## Results
+**Humidity**
+![humidity](screenshots/humidity.png)
+
+
+**Pressure**
+![pressure](screenshots/pressure.png)
+
+
+**Temperature**
+![temperature](screenshots/temperature.png)
+
+
+**Windspeed**
+![windspeed](screenshots/windspeed.png)
