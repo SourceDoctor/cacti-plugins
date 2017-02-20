@@ -87,16 +87,20 @@ now there should be the City and Country listed in the Graph like expected.
 
 ## Results
 **Humidity**
+
 ![humidity](screenshots/humidity.png)
 
 
 **Pressure**
+
 ![pressure](screenshots/pressure.png)
 
 
 **Temperature**
+
 ![temperature](screenshots/temperature.png)
 
 
 **Windspeed**
+
 ![windspeed](screenshots/windspeed.png)
