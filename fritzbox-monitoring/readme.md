@@ -7,6 +7,7 @@
 * Noise Margin
 * Max possible Datarate
 * Max usable Datarate
+* CRC Errors
 
 **Traffic**
 
@@ -26,6 +27,11 @@
 **signal power**
 
 ![signal power](screenshots/signal%2520power.png)
+
+
+**CRC Errors**
+
+![crc error](screenshots/crc%2520error.png)
 
 
 ## Installation
