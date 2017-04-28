@@ -31,7 +31,7 @@
 
 **CRC Errors**
 
-![crc error](screenshots/crc%2520error.png)
+![crc error](screenshots/crc_error.png)
 
 
 ## Installation
