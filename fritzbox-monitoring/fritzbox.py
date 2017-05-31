@@ -63,9 +63,8 @@ class Information(FritzDevice):
         # external IP Address
         service = 'WANPPPConnection'
         action = 'GetExternalIPAddress'
-
         keys = [
-        'NewExternalIPAddress',
+            'NewExternalIPAddress',
         ]
 
         return self.fetch(service, action, keys)
@@ -76,16 +75,16 @@ class Information(FritzDevice):
         service = 'WANDSLInterfaceConfig'
         action = 'GetInfo'
         keys = [
-        'NewUpstreamAttenuation',
-        'NewUpstreamPower',
-        'NewDownstreamCurrRate',
-        'NewDownstreamMaxRate',
-        'NewUpstreamNoiseMargin',
-        'NewDownstreamPower',
-        'NewUpstreamMaxRate',
-        'NewDownstreamNoiseMargin',
-        'NewDownstreamAttenuation',
-        'NewUpstreamCurrRate',
+            'NewUpstreamAttenuation',
+            'NewUpstreamPower',
+            'NewDownstreamCurrRate',
+            'NewDownstreamMaxRate',
+            'NewUpstreamNoiseMargin',
+            'NewDownstreamPower',
+            'NewUpstreamMaxRate',
+            'NewDownstreamNoiseMargin',
+            'NewDownstreamAttenuation',
+            'NewUpstreamCurrRate',
         ]
 
         return self.fetch(service, action, keys)
@@ -95,13 +94,24 @@ class Information(FritzDevice):
         # WAN Information
         service = 'WANCommonInterfaceConfig'
         action = [
-          'GetTotalBytesSent',
-          'GetTotalBytesReceived',
-          'GetTotalPacketsSent',
-          'GetTotalPacketsReceived',
+            'GetTotalBytesSent',
+            'GetTotalBytesReceived',
+            'GetTotalPacketsSent',
+            'GetTotalPacketsReceived',
         ]
 
         return self.fetch(service, action)
+
+    @property
+    def error_statistics(self):
+        # Error Statistics
+        service = 'WANDSLInterfaceConfig'
+        action = 'GetStatisticsTotal'
+        keys = [
+            'NewCRCErrors',
+        ]
+
+        return self.fetch(service, action, keys)
 
 
 def run():
@@ -120,6 +130,9 @@ def run():
         ret = fc.wan_information
     elif arg == 'ext_ip_address':
         ret = fc.ext_ip_address
+    elif arg == 'error':
+        ret = fc.error_statistics
+
     else:
         ret = "unknown Argument"
 
